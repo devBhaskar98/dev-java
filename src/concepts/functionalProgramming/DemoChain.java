@@ -1,7 +1,6 @@
 package concepts.functionalProgramming;
 
 import java.util.function.BiFunction;
-import java.util.function.Function;
 
 class DemoChain {
     private int result;

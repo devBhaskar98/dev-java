@@ -5,10 +5,12 @@ package concepts.threading;
 //implements "Runnable" at Task2
 class Task1 extends Thread {
 
+	@Override
 	public void run() { // SIGNATURE
 		System.out.print("\nTask1 Started");
-		for (int i = 101; i <= 199; i++)
+		for (int i = 101; i <= 199; i++) {
 			System.out.print(i + " ");
+		}
 		System.out.print("\nTask1 Done");
 	}
 }
@@ -18,8 +20,9 @@ class Task2 implements Runnable {
 	@Override
 	public void run() {
 		System.out.print("\nTask2 Started");
-		for (int i = 201; i <= 299; i++)
+		for (int i = 201; i <= 299; i++) {
 			System.out.print(i + " ");
+		}
 		System.out.print("\nTask2 Done");
 	}
 }
@@ -55,8 +58,9 @@ public class ThreadBasicsRunner {
 
 		// Task3
 
-		for (int i = 301; i <= 399; i++)
+		for (int i = 301; i <= 399; i++) {
 			System.out.print(i + " ");
+		}
 
 		System.out.print("\nTask3 Done");
 		System.out.print("\nMain Done");

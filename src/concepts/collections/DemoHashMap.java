@@ -1,6 +1,7 @@
 package concepts.collections;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 class Book {
 	int id;
@@ -19,9 +20,9 @@ class Book {
 public class DemoHashMap {
 	public static void main(String[] args) {
 		// Creating map of Books
-		
-		Map<Integer, Book> map = new HashMap<Integer, Book>();
-	
+
+		Map<Integer, Book> map = new HashMap<>();
+
 		// Creating Books
 		Book b1 = new Book(101, "Let us C", "Yashwant Kanetkar", "BPB", 8);
 		Book b2 = new Book(102, "Data Communications & Networking", "Forouzan", "Mc Graw Hill", 4);

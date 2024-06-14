@@ -13,13 +13,14 @@ class Task extends Thread {
 
 	}
 
+	@Override
 	public void run() { // SIGNATURE
 
 		System.out.print("\nTask " + number + " Started");
 
-		for (int i = number * 100; i <= number * 100 + 99; i++)
-
+		for (int i = number * 100; i <= number * 100 + 99; i++) {
 			System.out.print(i + " ");
+		}
 
 		System.out.print("\nTask" + number + "Done");
 

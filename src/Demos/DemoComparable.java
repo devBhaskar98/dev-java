@@ -1,9 +1,9 @@
 package Demos;
 
-//Java Program to demonstrate the use of Java Comparable.  
-//Creating a class which implements Comparable Interface  
-import java.util.*;
-import java.io.*;
+//Java Program to demonstrate the use of Java Comparable.
+//Creating a class which implements Comparable Interface
+import java.util.ArrayList;
+import java.util.Collections;
 
 class Student implements Comparable<Student> {
 	int rollno;
@@ -18,19 +18,20 @@ class Student implements Comparable<Student> {
 
 	@Override
 	public int compareTo(Student st) {
-		if (age == st.age)
+		if (age == st.age) {
 			return 0;
-		else if (age > st.age)
+		} else if (age > st.age) {
 			return 1;
-		else
+		} else {
 			return -1;
+		}
 	}
 }
 
-//Creating a test class to sort the elements  
+//Creating a test class to sort the elements
 public class DemoComparable {
 	public static void main(String args[]) {
-		ArrayList<Student> al = new ArrayList<Student>();
+		ArrayList<Student> al = new ArrayList<>();
 		al.add(new Student(101, "Vijay", 23));
 		al.add(new Student(106, "Ajay", 27));
 		al.add(new Student(105, "Jai", 21));

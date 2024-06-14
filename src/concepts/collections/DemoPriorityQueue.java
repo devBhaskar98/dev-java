@@ -6,7 +6,7 @@ import java.util.PriorityQueue;
 public class DemoPriorityQueue {
 
 	public static void main(String[] args) {
-		PriorityQueue<String> queue = new PriorityQueue<String>();
+		PriorityQueue<String> queue = new PriorityQueue<>();
 		queue.add("Amit");
 		queue.add("Vijay");
 		queue.add("Karan");

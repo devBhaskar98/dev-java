@@ -11,6 +11,5 @@
 			<attribute name="optional" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Tools/sts-4.24.0.RELEASE/lombok.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

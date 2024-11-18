@@ -1,4 +1,4 @@
-package Demos;
+package demos;
 
 @FunctionalInterface
 interface Concatenator {

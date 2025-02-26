@@ -4,14 +4,17 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.BiFunction;
+import java.util.function.Predicate;
 
 public class DemoPredicate {
 
 	public void streamAndPrintArr() {
-		List<Integer> list = new ArrayList<>(
-	            Arrays.asList(1, 3, 4, 5, 2)
-	        );
-		list.stream().forEach(number -> System.out.println("streamAndPrintArr::" + number));
+		List<Integer> list = new ArrayList<>(Arrays.asList(1, 3, 4, 5, 2));
+
+		Predicate<Integer> isEven = (n) -> n % 2 == 0;
+
+//		list.stream().forEach(number -> System.out.println("streamAndPrintArr::" + number));
+		list.stream().filter(isEven).forEach(System.out::println);
 	}
 
 	public static void main(String[] args) {

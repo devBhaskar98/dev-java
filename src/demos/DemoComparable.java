@@ -1,4 +1,4 @@
-package Demos;
+package demos;
 
 //Java Program to demonstrate the use of Java Comparable.
 //Creating a class which implements Comparable Interface

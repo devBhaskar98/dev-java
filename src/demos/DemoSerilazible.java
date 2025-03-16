@@ -1,4 +1,4 @@
-package Demos;
+package demos;
 
 //Java program to illustrate Serializable interface
 import java.io.FileInputStream;

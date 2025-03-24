@@ -1,4 +1,4 @@
-package Demos;
+package demos;
 
 import java.util.Optional;
 
@@ -6,9 +6,9 @@ public class DemoOptional {
 
 	public static void main(String[] args) {
 
-		String str[] = { "welcome" };
+		String str[] = { "welcome", null };
 
-		Optional<String> chk = Optional.ofNullable(str[0]);
+		Optional<String> chk = Optional.ofNullable(str[1]);
 
 		chk.ifPresent(System.out::println);
 
@@ -18,6 +18,8 @@ public class DemoOptional {
 //		} else {
 //			System.out.println("NULL");
 //		}
+
+		System.out.println("program executed");
 
 	}
 

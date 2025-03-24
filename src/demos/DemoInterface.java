@@ -1,14 +1,18 @@
-package Demos;
+package demos;
 
 interface Car {
 	void turnRight();
 
 	void turnLeft();
 
+	// The default keyword allows you to provide a method implementation directly in
+	// an interface.
 	default void goForward() {
 		System.out.println("Going Forward");
 	}
 
+	// The default keyword allows you to provide a method implementation directly in
+	// an interface.
 	default void goBack() {
 		System.out.println("Going Backward");
 	};

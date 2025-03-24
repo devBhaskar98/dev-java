@@ -1,4 +1,4 @@
-package Demos;
+package demos;
 
 abstract class CarAb {
 	int speed = 10;

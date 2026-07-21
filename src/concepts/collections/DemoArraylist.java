@@ -21,7 +21,7 @@ public class DemoArraylist {
 
 
 
-
+		
 		 //traversing elements of ArrayList object
 		 for (DataPerson dpIterator : demo1) {
 		   System.out.println(dpIterator.getId() );
@@ -35,7 +35,7 @@ public class DemoArraylist {
 	        System.out.println("Iterating in descending order:");
 	        while (iterator.hasPrevious()) {
 	            System.out.println(iterator.previous());
-	        }
+	     }
 
 	}
 

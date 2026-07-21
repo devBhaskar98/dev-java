@@ -52,7 +52,7 @@ public class DemoHashMap {
 		// Adding Student to Map
 		studentMap.put(1, s1);
 
-		// Traversing Map
+		// Traversing Map for Books
 		for(Map.Entry<Integer, Book> entry : map.entrySet()) {
 			int key = entry.getKey();
 			Book b = entry.getValue();
